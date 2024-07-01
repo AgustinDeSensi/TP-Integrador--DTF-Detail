@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*fuentes:
+font-family: "Bebas Neue", sans-serif; 
+font-family: "Poppins", sans-serif;
+ */
+
+/*
+PALETA DE COLORES
+     --color-negro-carbon: #2B2B2B;
+    --color-rojo-borgona: #800020;
+    --color-rojo-anaranjado: #FF4500;
+    --color-blanco-humo: #F5F5F5;
+    --color-gris-ceniza: #4B4B4B; */
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+p {
+    color: #4B4B4B;
+    font-weight: 700;
+}
+h1,h2,h3,h4,h5 {
+    font-family:  "Bebas Neue", sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #2c2c2c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(DTF-Img/Backgrounds/fondoindex.jpg) ;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .navbar ul li{
+    font-family: "Bebas Neue", sans-serif; 
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color:  #F5F5F5;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: #800020;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 100px;
+    height: 90px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 120px;
+
+}
+
+.header-text h1 , span, h3 {
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color:  #F5F5F5;
+    margin-bottom: 15px;
+}
+
+.header-text span{
+    font-size: 35px;
+}
+
+.header-text p{
+    color:  #F5F5F5;
+    padding: 0 250px;
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #FF4500;
+    font-family: "Bebas Neue", sans-serif; 
+    color: rgb(255, 233, 205);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 25px 0;
+    border: 0;
+    text-decoration: none;
+}
+
+.btn-1:hover {
+    background-color: rgb(58, 0, 0);
+}
+
+.header-direc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.direc{
+        width: 30%;
+        margin-bottom: 20px;
+        text-align: center;
+}
+.direc h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #F5F5F5;
+}
+
+.direc p {
+    font-size: 20px;
+    font-weight: 550;
+    color: #F5F5F5;
+}
+.nosotros {
+    padding: 15px;;
+    background: linear-gradient(135deg, #2B2B2B, #000000);
+}
+
+.container-nosotros1 {
+    display: flex;
+}
+
+.nosotros1 {
+    background-image: url(/DTF-Img/image.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    margin-top: 25px;
+}
+
+.nosotros2 {
+    width: 50%;
+    padding: 100px;
+    margin-bottom: 30px;
+}
+
+
+.nosotros h2{
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 4em;
+    line-height: 100px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.nosotros .nosotros-text{
+    font-size: 22px;
+    color:  #F5F5F5;
+
+}
+
+.servicios-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.servicios-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/DTF-Img/Backgrounds/bgroundbw.jpg);
+    opacity: 0,1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.servicios-text p{
+    padding: 50px 100px;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #2B2B2B;
+    text-align: center;
+}
+.servicios-text hr {
+    border: 1px solid #000000;
+    width: 80%;
+}
+.servicios-text h2{
+    color: #4B4B4B;
+    font-size: 5em;
+    margin: 25px 0;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.servicios-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:80%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.servicio-1{
+    min-height: 200px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.servicio-1 img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height:auto;
+}
+
+.servicio-1 h3{
+    text-align: center;
+    font-size: 25px;
+    color: #F5F5F5;
+}
+.servicio-1 li{
+    list-style-type: circle;
+    font-size: 15px;
+    font-weight: 750;
+    color: #F5F5F5;
+    margin-bottom: 10px;
+}
+#marcas-scroll {
+    background: linear-gradient(135deg, #2B2B2B, #000000);
+}
+.marcas-container {
+    display: flex;}
+.marcas-titulo{
+    width: 50%;
+    padding: 100px
+}
+.marcas-titulo p{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.marcas-titulo h2{
+    color: #4B4B4B;
+    font-size: 4em;
+}
+.marcas-gyonimg {
+    background-image: url(/DTF-Img/MARCAS-GYON.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    margin-top: 25px;
+}
+.marcas-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: auto;
+    gap: 10px;
+}
+.marcas-texto h3{
+    font-size: 3.5em;
+    color: #4B4B4B;
+}
+.marcas-texto ul li{
+    list-style: circle ;
+    text-align: center;
+    color: #f5f5f5bc;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.contacto-container{
+    background-color: #000000;
+    background-image: url(/DTF-Img/Backgrounds/435543477_452394297350566_3130840333815631026_n.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contacto1{
+    display: flex;
+    flex-direction: column;
+}
+.contacto1 h2{
+    color: #F5F5F5;
+    font-size: 3em;
+    padding: auto;
+}
+
+.contacto1 a, p{
+    color: #F5F5F5;
+    padding: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.contacto1 a:hover{
+    color: #800020;
+    transform: rotateY('-10px');
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.campo {
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #050505be;
+    border: 1px solid #CF2D3A;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+textarea {
+    width: 520px;
+}
+.footer-container {
+    position: relative;
+    width: 100%;
+    background-color: #1c1c1c;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.iconos-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    position: relative;
+}
+
+.icono-element{
+    padding: auto;
+}
+
+.icono {
+    color: #F5F5F5;
+    font-size: 28px;
+    display: inline-block;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+.icono:hover {
+    transform: translateY(-10px);
+}
+
+.info-elements {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.information-footer {
+    font-family:  "Bebas Neue", sans-serif;
+    color: #F5F5F5;
+    font-size: 18px;
+    display: inline-block;
+    margin: 5px;
+    padding: 0 15px;
+}
+.text-footer {
+    margin-bottom: 0;
+    color: #F5F5F5;
+    font-size: 15px;
+}
+
+@media (max-width:1000px) {
+    
+
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+        color: #F5F5F5;
+        font-size: 30px;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1c1c1c;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-text{ 
+        margin-bottom: 15px;
+    }
+    .header-text h1 {
+        font-size: 110px;
+    }
+    .header-text p { 
+        padding: 0;
+        margin: 15px 0;
+    }
+    .header-direc {
+        flex-direction: column;
+        align-items: center;
+    }
+    .direc {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    .direc h3{
+        margin: 10px;
+        font-size: 20px;
+        color: #F5F5F5;
+        font-weight: 700;
+    }
+    .direct p {
+        font-size: 18px;
+    }
+    .nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros1 {
+        display: none;
+    }
+    .nosotros2 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .nosotros2 h2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .nosotros2 p {
+        margin: 15px 0;
+    }
+    .servicios-group {
+        padding: 30px;
+    }
+    .servicios-text p {
+        padding: 40px;
+    }
+
+    .servicios-box {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    .servicio-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .marcas-container {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .marcas-titulo {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+    .marcas-gyonimg {
+        padding: 200px;
+        width: 100%;
+    }
+
+    .marcas-texto{
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+
+}
+@media (max-width:520px) {
+    .header-text {
+        margin-top: 50px;
+    }
+    .header-text h1 {
+        font-size: 65px;
+    }
+    .header-text span {
+        font-size: 25px;
+    }
+    .header-text p {
+        font-size: 16px ; 
+    }
+    .direc {
+        width: 70%;
+    }
+    .direc h3 {
+        font-size: 16px;
+    }
+    .direc p {
+        font-size: 16px;
+    }
+    .nosotros2 h2 {
+        font-size: 70px;
+        text-align: center;
+    }
+    .nosotros .nosotros-text {
+        font-size: 18px;
+    }
+    .servicios-text h2 {
+        font-size: 3em;
+        margin-top: 25px;
+        margin: 15px 0 ;
+    }
+    .servicios-text p {
+        padding: 20px;
+        font-size: 1em;
+    }
+    .servicios-box{
+        flex-direction: column;
+        width: auto;
+    }
+    .servicio-1 {
+        width: 200px;
+        padding: 20px;
+        align-items: center;
+    }
+    .marcas-titulo h2 {
+        font-size: 2.5em;
+    }
+    .marcas-titulo p {
+        font-size: 1.2em;
+    }
+    .marcas-gyonimg {
+        padding: 100px;
+        background-size: cover;
+    }
+    .marcas-texto h3 {
+        font-size: 2.5em;
+    }
+    .contacto1 p {
+        font-size: 1em;
+    }
+    .contacto1 a {
+        font-size: 1.1em;
+    }
+    .info-elements ul {
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+}
