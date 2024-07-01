@@ -174,7 +174,7 @@ body{
 }
 
 .nosotros1 {
-    background-image: url(/DTF-Img/image.webp);
+    background-image: url(DTF-Img/image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -216,7 +216,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/DTF-Img/Backgrounds/bgroundbw.jpg);
+    background-image: url(DTF-Img/Backgrounds/bgroundbw.jpg);
     opacity: 0,1;
     background-repeat: no-repeat;
     background-position: center center;
@@ -304,7 +304,7 @@ body{
     font-size: 4em;
 }
 .marcas-gyonimg {
-    background-image: url(/DTF-Img/MARCAS-GYON.webp);
+    background-image: url(DTF-Img/MARCAS-GYON.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -335,7 +335,7 @@ body{
 
 .contacto-container{
     background-color: #000000;
-    background-image: url(/DTF-Img/Backgrounds/435543477_452394297350566_3130840333815631026_n.jpg);
+    background-image: url(DTF-Img/Backgrounds/435543477_452394297350566_3130840333815631026_n.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
